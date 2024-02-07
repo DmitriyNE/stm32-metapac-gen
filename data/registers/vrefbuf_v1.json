@@ -1,0 +1,59 @@
+{
+  "block/VREFBUF": {
+    "description": "Voltage reference buffer.",
+    "items": [
+      {
+        "name": "CSR",
+        "description": "control and status register.",
+        "byte_offset": 0,
+        "fieldset": "CSR"
+      },
+      {
+        "name": "CCR",
+        "description": "calibration control register.",
+        "byte_offset": 4,
+        "fieldset": "CCR"
+      }
+    ]
+  },
+  "fieldset/CCR": {
+    "description": "calibration control register.",
+    "fields": [
+      {
+        "name": "TRIM",
+        "description": "TRIM.",
+        "bit_offset": 0,
+        "bit_size": 6
+      }
+    ]
+  },
+  "fieldset/CSR": {
+    "description": "control and status register.",
+    "fields": [
+      {
+        "name": "ENVR",
+        "description": "ENVR.",
+        "bit_offset": 0,
+        "bit_size": 1
+      },
+      {
+        "name": "HIZ",
+        "description": "HIZ.",
+        "bit_offset": 1,
+        "bit_size": 1
+      },
+      {
+        "name": "VRR",
+        "description": "VRR.",
+        "bit_offset": 3,
+        "bit_size": 1
+      },
+      {
+        "name": "VRS",
+        "description": "VRS.",
+        "bit_offset": 4,
+        "bit_size": 3
+      }
+    ]
+  }
+}
